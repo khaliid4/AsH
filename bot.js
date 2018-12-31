@@ -1086,7 +1086,28 @@ client.on('ready',async () => {
     console.error(e);
   }
 });	
+///////////////////رابط10 اشخاص///////////////////
 
+client.on('message', message => {
+    if (message.content.startsWith("رابط10")) {
+
+  message.channel.createInvite({
+        thing: true,
+        maxUses: 100,
+        maxAge: 86400
+    }).then(invite =>
+      message.author.sendMessage(invite.url)
+    )
+  message.channel.send("**:link:.تم ارسال الرابط برسالة خاصة**")
+
+message.author.send(`**مدة الرابط : يـوم
+عدد استخدامات الرابط : 100**`)
+
+
+    }
+});
+
+///////////////////////////////////////////////
 
 
 
