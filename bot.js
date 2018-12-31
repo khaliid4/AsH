@@ -161,7 +161,7 @@ m.sendMessage(args)
 
 client.on('message', message => {
     if (message.author.id === client.user.id) return;
-            if (message.content.startsWith(prefix + "ping")) {
+            if (message.content.startsWith(prefix + "piing")) {
         message.channel.sendMessage(':ping_pong: Pong! In `' + `${client.ping}` + ' ms`');
     }
 });
@@ -458,21 +458,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === '.') {
-              message.channel.send('**جعل ما ينقط غيرك**');
-              
-               
-
-            }
-});
-
-
-
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-         client.on('message', message => {
             if (message.content === 'منور') {
               message.channel.send('**بنووورك**');
               
@@ -490,7 +475,7 @@ client.on('ready', () => {
 });
          client.on('message', message => {
             if (message.content === 'بنق') {
-              message.channel.send('+ping');
+              message.channel.send('piing');
               
                
 
