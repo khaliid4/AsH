@@ -1450,13 +1450,34 @@ client.on('ready',async () => {
 
 
 
-////////////////////////////////يثبت البوت داخل روم/////////////////////////////////////
+/////////////////////////////BOT//////////////////////////////////////
 
 
-client.on('ready', () => {
-var x = client.channels.get("502797689474383872");
-if (x) x.join();
-});
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "BOT", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.00001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
 
 
 /////////////////////////////////////////////////////////////////////
