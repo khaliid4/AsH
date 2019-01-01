@@ -1097,19 +1097,366 @@ client.on('message', function(msg) {
 
 
 
-/////////////////////////////////////////////////////////////////////
+///////////////////////////////////تغيير لون ASH////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+////////////////////////////////تغيير لون ASH///////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 1", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+////////////////////////////////تغيير لون ASH///////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 2", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+/////////////////////////////////تغيير لون ASH//////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 3", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+////////////////////////////////تغيير لون ASH///////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 4", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+///////////////////////////////تغيير لون ASH////////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 5", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+///////////////////////////////تغيير لون ASH////////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 6", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+///////////////////////////////تغيير لون ASH////////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 7", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+////////////////////////////////تغيير لون ASH///////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 8", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+///////////////////////////////تغيير لون ASH////////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 9", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
+
+
+////////////////////////////////تغيير لون ASH///////////////////////////////////
+	  
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "VIP 0", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.0001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
 
 
 
 
-/////////////////////////////////////////////////////////////////////
+
+/////////////////////////////BOT MUSIC//////////////////////////////////////
+
+
+
+client.on('ready',async () => {
+  console.log(client.user.username);
+  try {
+    const config = {
+      name: "BOT MUSIC", // اسم الرتبة
+      guildid: "502793545841901579", // اي دي السيرفر
+      sec: 0.00001 // عدد الثواني
+    };
+    let guild = client.guilds.get(config.guildid);
+    let role = guild.roles.find(role => role.name === config.name);
+    let sec = config.sec * 1000;
+    if(!guild) return console.warn("Unkown guild.");
+    if(!role) return console.warn("Unkown role");
+    if(role.position >= guild.members.get(client.user.id).highestRole.position) return console.warn("Bot highest role must be above rainbow role");
+    setInterval(() => {
+      role.edit({ 
+      color: "RANDOM"
+    });
+    }, sec);
+  } catch(e) {
+    console.error(e);
+  }
+});	  
 
 
 
 
-/////////////////////////////////////////////////////////////////////
+////////////////////////////////يثبت البوت داخل روم/////////////////////////////////////
 
 
+client.on('ready', () => {
+var x = client.channels.get("502797689474383872");
+if (x) x.join();
+});
 
 
 /////////////////////////////////////////////////////////////////////
