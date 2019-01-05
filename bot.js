@@ -15,6 +15,7 @@ client.on('message', msg => {
 });
 
 //////////////////////كود نفس الكلام///////////////////
+
 client.on('message', message => {
   var prefix = "+"; 
   
@@ -26,7 +27,7 @@ command = command.slice(prefix.length);
    
 let args = message.content.split(" ").slice(1);
    
-if (command === "say") {
+if (command === "saay") {
 message.delete()
   message.channel.sendMessage(args.join(" ")).catch(console.error);
 }
@@ -34,33 +35,6 @@ message.delete()
 	
 	
 	});
-
-
-
-//////////////////////////رابط//////////////////
-
-
-
-client.on('message', msg => {
-  if (msg.content === 'راابط') {
-          msg.react("💜")
-      let embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
-   .setTitle(`تفضل يا قلبي 🌹`)
-   .setDescription(` 
-حط هنا الرابط خيو 
-الي يعجبك حطه يوول
-`)
-.setFooter(`${msg.guild.name}™`)
-
-
-
-msg.channel.sendEmbed(embed);      
-  }   
- });
-
-
-
 
 
 
