@@ -40,37 +40,22 @@ client.on('message', msg => {
   }
 });
 
-//////////////////////كود مضاد السبام////////////////////
-
-
-var anti_spam = require("discord-anti-spam");
- 
-anti_spam(bot, {
-  warnBuffer: 7,
-  maxBuffer: 8,
-  interval: 1000,
-  warningMessage: "**سيتم طردك إن لم توقف سبام**", 
-  banMessage: "تم الطرد بسبب السبام", 
-  maxDuplicatesWarning: 7,
-  maxDuplicatesBan: 10 
-});
- 
-bot.login(process.env.BOT_SPAM);
- 
-const bot1 = new Discord.Client();
- 
- var anti_spam1 = require("discord-anti-spam");
-anti_spam1(bot1, {
-  warnBuffer: 7,
-  maxBuffer: 8,
-  interval: 1000,
-  warningMessage: "**سيتم طردك إن لم توقف سبام**",
-  banMessage: "تم الطرد بسبب السبام", 
-  maxDuplicatesWarning: 7,  
-  maxDuplicatesBan: 10 
-});
- 
-
+//////////////////////كود نفس الكلام///////////////////
+client.on('message', message => {
+  var prefix = "+"; 
+  
+if (message.author.bot) return;
+if (!message.content.startsWith(prefix)) return;
+   
+let command = message.content.split(" ")[0];
+command = command.slice(prefix.length);
+   
+let args = message.content.split(" ").slice(1);
+   
+if (command === "say") {
+message.delete()
+  message.channel.sendMessage(args.join(" ")).catch(console.error);
+}
 
 //////////////////////////رابط//////////////////
 
@@ -96,41 +81,6 @@ msg.channel.sendEmbed(embed);
 
 
 
-
-
- 
- /////////////////رسال رسالة في الشات /////////////////////////
- 
- 
-var Prefix = "+";
-
-client.on('message', message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-
-  let args = message.content.split(" ").slice(1);
-
-// -say
-  if (command === "say") {
-          message.delete()
-    message.channel.sendMessage(args.join(" ")).catch(console.error);
-  }
-  
- 
-
-if (command == "say2") {
-    let say = new Discord.RichEmbed()
-    .setDescription(args.join("  "))
-    .setColor(0x23b2d6)
-    message.channel.sendEmbed(say);
-    message.delete();
-  }
-
-
-});
 
 
 
