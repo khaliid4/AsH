@@ -32,12 +32,43 @@ console.log('Dev Narox by Jackeo')
 
 });
 
+
+//////////////////////////////////////////////////
 client.on('message', msg => {
   if (msg.content === '.') {
     msg.reply('جعل ماينقط غيرك :kissing_heart: ');
   }
 });
 
+//////////////////////كود مضاد السبام////////////////////
+
+
+var anti_spam = require("discord-anti-spam");
+ 
+anti_spam(bot, {
+  warnBuffer: 7,
+  maxBuffer: 8,
+  interval: 1000,
+  warningMessage: "**سيتم طردك إن لم توقف سبام**", 
+  banMessage: "تم الطرد بسبب السبام", 
+  maxDuplicatesWarning: 7,
+  maxDuplicatesBan: 10 
+});
+ 
+bot.login(process.env.BOT_SPAM);
+ 
+const bot1 = new Discord.Client();
+ 
+ var anti_spam1 = require("discord-anti-spam");
+anti_spam1(bot1, {
+  warnBuffer: 7,
+  maxBuffer: 8,
+  interval: 1000,
+  warningMessage: "**سيتم طردك إن لم توقف سبام**",
+  banMessage: "تم الطرد بسبب السبام", 
+  maxDuplicatesWarning: 7,  
+  maxDuplicatesBan: 10 
+});
  
  
  
