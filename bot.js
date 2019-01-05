@@ -30,6 +30,7 @@ if (command === "say") {
 message.delete()
   message.channel.sendMessage(args.join(" ")).catch(console.error);
 }
+	});
 
 //////////////////////////رابط//////////////////
 
